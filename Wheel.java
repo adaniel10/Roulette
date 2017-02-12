@@ -84,7 +84,7 @@ public class Wheel {
 	/**
 	 * The following method return a random pocket number based on the random
 	 * object.
-	 * @return int
+	 * @return int pocket number
 	 */
 	public int randomiser()
 	{
