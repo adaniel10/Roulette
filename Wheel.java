@@ -81,6 +81,11 @@ public class Wheel {
 	public void userInputPocket(int userMon) { this.userMon = userMon; }
 	public int getUserInputPocket() { return this.userMon; }
 	
+	/**
+	 * The following method return a random pocket number based on the random
+	 * object.
+	 * @return int
+	 */
 	public int randomiser()
 	{
 		Random rand = new Random();
@@ -89,6 +94,14 @@ public class Wheel {
 		return pocket.get(pick).getNum();
 	}
 	
+	/**
+	 * This method checks which bets have been made by the user and then performs 
+	 * the necessary calculations and the outcome to the user.
+	 * @param userSel boolean
+	 * @param userMon int
+	 * @param o boolean
+	 * @param e boolean
+	 */
 	public void checkPocket(boolean userSel, int userMon, boolean o, boolean e)
 	{			
 		//throw an error if the user has not placed any bets
